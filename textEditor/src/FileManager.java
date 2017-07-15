@@ -42,9 +42,7 @@ class FileManager {
             }
 
             content = sb.toString();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return content;
@@ -87,11 +85,10 @@ class FileManager {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream("preferences.ser"));
             res = (Preferences) ois.readObject();
             ois.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
+
         return res;
     }
 

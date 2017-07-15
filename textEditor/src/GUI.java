@@ -334,6 +334,12 @@ public class GUI extends Application {
         }
     }
 
+    /**
+     * The method displays the word count of the selected text in the current tab.
+     * If no text is selected, the word count of the entire document is displayed.
+     *
+     * The word count is displayed using a toast.
+     * */
     private void getWordCount() {
         String[] words;
         if (getCurrentTextArea().getText().equals("")) {
