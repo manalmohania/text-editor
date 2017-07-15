@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-/**
- * Created by manalmohania on 21/6/17.
- */
 final class Preferences implements Serializable{
 
     // not using Font as a field because it is not serialisable

@@ -398,6 +398,7 @@ public class GUI extends Application {
             createWarningAlert("Error saving file");
         }
         else {
+            setTabTitle(file);
             toast.makeText(mainStage, "File saved", 1000, 100, 15);
             tabInfos.stream()
                     .filter(tabInfo -> tabInfo.getTab().equals(tabManager.getCurrentTab()))
@@ -443,12 +444,27 @@ public class GUI extends Application {
                 .filter(tabInfo -> tabInfo.getTab().equals(tabManager.getCurrentTab()))
                 .forEach(tabInfo -> tabInfo.setHash(content.hashCode()));
 
-        int dotPos = file.getName().lastIndexOf('.');
-        String name = dotPos > 0 ? file.getName().substring(0, dotPos) : file.getName();
-        tabManager.getCurrentTab().setText(name);
+        setTabTitle(file);
         tabInfos.stream()
                 .filter(tabInfo -> tabInfo.getTab().equals(tabManager.getCurrentTab()))
                 .forEach(tabInfo -> tabInfo.setFile(file));
+    }
+
+    /**
+     * Sets the title of the current tab to the filename without the extension
+     *
+     * @param file: The file from which the filename is extracted
+     * */
+    private void setTabTitle(File file) {
+
+        if (file == null) {
+            tabManager.getCurrentTab().setText("untitled");
+            return;
+        }
+
+        int dotPos = file.getName().lastIndexOf('.');
+        String name = dotPos > 0 ? file.getName().substring(0, dotPos) : file.getName();
+        tabManager.getCurrentTab().setText(name);
     }
 
     private TextArea newTextArea() {
