@@ -1,0 +1,53 @@
+.tab-pane
+{
+    -fx-tab-min-width:120px;
+    -fx-background-color: #555555;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #2f3033;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #444444;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #d6a242;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #ffa500;
+}
+
+
+.text-area {
+    -fx-background-color: #444444;
+    -fx-text-fill: #f7f7f7;
+}
+
+.text-area .content {
+    -fx-background-color: #444444;
+}
+
+#popup {
+    -fx-background-color: #555555;
+}
+
+#popup-text {
+    -fx-fill: #f0f0f0;
+}
+
+#apply {
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-insets: 0,1,2;
+    -fx-padding: 5, 5, 20, 20;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
