@@ -361,6 +361,7 @@ public class GUI extends Application {
 
         if (tabManager.getTabs().size() < 2 && !(tabManager.getTabs().size() == 1 && !unChanged(tabManager.getCurrentTab()))) {
             Platform.exit();
+            return;
         }
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -385,6 +386,10 @@ public class GUI extends Application {
         Platform.exit();
     }
 
+    /**
+     * saves the text in the current tab based upon the file that is associated with it;
+     * if there is no such file, the saveAs method is called
+     * */
     private void save(){
         File file = null;
         for (TabInfo tabInfo : tabInfos) {
@@ -413,6 +418,9 @@ public class GUI extends Application {
 
     }
 
+    /**
+     * associates a file with the current tab and calls the save method
+     * */
     private void saveAs() {
         File file = fileManager.setTextFile();
         if (file == null) {
@@ -435,6 +443,9 @@ public class GUI extends Application {
         save();
     }
 
+    /**
+     * fills the text area with the appropriate text
+     * */
     private void readFile() {
         File file = fileManager.getTextFile();
         if (file == null) {
@@ -554,7 +565,7 @@ public class GUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Text Editor");
+        primaryStage.setTitle("textEditor");
         root = new Group();
         Scene scene = new Scene(root, 800, 600);
         this.scene = scene;
