@@ -27,37 +27,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="113" column="38" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="48" />
+            <state relative-caret-position="-3474">
+              <caret line="340" column="65" selection-start-line="340" selection-start-column="65" selection-end-line="340" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#20363#20364#0" expanded="true" />
-                <element signature="e#20435#20436#0" expanded="true" />
-                <element signature="e#20902#20903#0" expanded="true" />
-                <element signature="e#20930#20931#0" expanded="true" />
+                <element signature="e#20786#20787#0" expanded="true" />
+                <element signature="e#20858#20859#0" expanded="true" />
+                <element signature="e#21325#21326#0" expanded="true" />
+                <element signature="e#21353#21354#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Preferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TabInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TabInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="195">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -66,9 +56,14 @@
       <file leaf-file-name="TabManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TabManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -756,12 +751,12 @@
       <workItem from="1499672733432" duration="1373000" />
       <workItem from="1499745442993" duration="9867000" />
       <workItem from="1500098160303" duration="1512000" />
-      <workItem from="1500121460141" duration="5950000" />
+      <workItem from="1500121460141" duration="7130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136855000" />
+    <option name="totallyTimeSpent" value="138035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="6" />
@@ -774,7 +769,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -885,10 +880,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20363#20364#0" expanded="true" />
-            <element signature="e#20435#20436#0" expanded="true" />
-            <element signature="e#20902#20903#0" expanded="true" />
-            <element signature="e#20930#20931#0" expanded="true" />
+            <element signature="e#20786#20787#0" expanded="true" />
+            <element signature="e#20858#20859#0" expanded="true" />
+            <element signature="e#21325#21326#0" expanded="true" />
+            <element signature="e#21353#21354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -942,10 +937,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20363#20364#0" expanded="true" />
-            <element signature="e#20435#20436#0" expanded="true" />
-            <element signature="e#20902#20903#0" expanded="true" />
-            <element signature="e#20930#20931#0" expanded="true" />
+            <element signature="e#20786#20787#0" expanded="true" />
+            <element signature="e#20858#20859#0" expanded="true" />
+            <element signature="e#21325#21326#0" expanded="true" />
+            <element signature="e#21353#21354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1003,10 +998,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20363#20364#0" expanded="true" />
-            <element signature="e#20435#20436#0" expanded="true" />
-            <element signature="e#20902#20903#0" expanded="true" />
-            <element signature="e#20930#20931#0" expanded="true" />
+            <element signature="e#20786#20787#0" expanded="true" />
+            <element signature="e#20858#20859#0" expanded="true" />
+            <element signature="e#21325#21326#0" expanded="true" />
+            <element signature="e#21353#21354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1019,10 +1014,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20363#20364#0" expanded="true" />
-            <element signature="e#20435#20436#0" expanded="true" />
-            <element signature="e#20902#20903#0" expanded="true" />
-            <element signature="e#20930#20931#0" expanded="true" />
+            <element signature="e#20786#20787#0" expanded="true" />
+            <element signature="e#20858#20859#0" expanded="true" />
+            <element signature="e#21325#21326#0" expanded="true" />
+            <element signature="e#21353#21354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1130,14 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Theme.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1146,33 +1133,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="113" column="38" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#20363#20364#0" expanded="true" />
-            <element signature="e#20435#20436#0" expanded="true" />
-            <element signature="e#20902#20903#0" expanded="true" />
-            <element signature="e#20930#20931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TabInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3474">
+          <caret line="340" column="65" selection-start-line="340" selection-start-column="65" selection-end-line="340" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#20786#20787#0" expanded="true" />
+            <element signature="e#20858#20859#0" expanded="true" />
+            <element signature="e#21325#21326#0" expanded="true" />
+            <element signature="e#21353#21354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -141,6 +141,7 @@ public class GUI extends Application {
         menuBar.getMenus().addAll(menuFile, menuEdit, menuView, menuFormat, menuHelp);
         menuBar.setPrefWidth(800);
     }
+
     /**
      * creates items for each of the individual menu items in the menu
      * */
@@ -204,6 +205,11 @@ public class GUI extends Application {
         menuBar.getMenus().get(4).getItems().addAll(view, report);
     }
 
+    /**
+     * adds a list of available fonts to a given menu
+     *
+     * @param menu: The menu to which the fonts are to be attached
+     * */
     private void createFonts(Menu menu) {
         ObservableList<String> observableList = FXCollections.observableArrayList();
         observableList.addAll(Font.getFontNames());
@@ -217,6 +223,11 @@ public class GUI extends Application {
         menu.getItems().add(customMenuItem);
     }
 
+    /**
+     * adds a list of font sizes to a given menu. Anything outside the range should be unnecessary.
+     *
+     * @param menu: The menu to which the fonts are to be attached
+     * */
     private void createFontSizes(Menu menu) {
         ObservableList<Integer> observableList = FXCollections.observableArrayList();
         ArrayList<Integer> nums = new ArrayList<>();
@@ -326,6 +337,9 @@ public class GUI extends Application {
         });
     }
 
+    /**
+     * connects to the email client and adds me to the "To" field
+     * */
     private void sendMail() {
         try {
             Desktop.getDesktop().mail(URI.create("mailto:manalmohania@gmail.com"));
