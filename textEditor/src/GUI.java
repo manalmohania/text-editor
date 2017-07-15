@@ -193,9 +193,9 @@ public class GUI extends Application {
             try {
                 Desktop.getDesktop().browse(new URI("http://www.google.com"));
             } catch (IOException e) {
-                createWarningAlert("Unable to connect to web browser");
+                createWarningAlert("Unable to connect to the web");
             } catch (URISyntaxException e) {
-                createWarningAlert("Unable to connect to web browser");
+                createWarningAlert("Unable to connect to the web");
                 e.printStackTrace();
             }
         });
@@ -359,6 +359,10 @@ public class GUI extends Application {
      * */
     private void quit() {
 
+        if (tabManager.getTabs().size() < 2 && !(tabManager.getTabs().size() == 1 && !unChanged(tabManager.getCurrentTab()))) {
+            Platform.exit();
+        }
+
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm to quit");
         ButtonType no = new ButtonType("No, take me back");
@@ -366,22 +370,18 @@ public class GUI extends Application {
 
         if (tabManager.getTabs().size() > 1) {
             alert.setContentText("You are about to close " + tabManager.getTabs().size() + " tabs. Do you really want to quit?");
-            alert.getButtonTypes().setAll(no, yes);
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.isPresent() && result.get() == no) {
-                alert.hide();
-                return;
-            }
         }
         else if (tabManager.getTabs().size() == 1 && !unChanged(tabManager.getCurrentTab())) {
             alert.setContentText("The content of the tab is not saved. Do you really want to quit?");
-            alert.getButtonTypes().setAll(no, yes);
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.isPresent() && result.get() == no) {
-                alert.hide();
-                return;
-            }
         }
+
+        alert.getButtonTypes().setAll(no, yes);
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == no) {
+            alert.hide();
+            return;
+        }
+
         Platform.exit();
     }
 
