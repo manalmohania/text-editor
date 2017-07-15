@@ -10,8 +10,8 @@ public class DarkToast extends Toast{
     }
 
     @Override
-    public void makeText(Stage ownerStage, String toastMsg, int toastDelay, int fadeInDelay, int fadeOutDelay, int fontSize) {
-        super.makeText(ownerStage, toastMsg, toastDelay, fadeInDelay, fadeOutDelay, fontSize);
+    public void makeText(Stage ownerStage, String toastMsg, int toastDelay, int fadeDelay, int fontSize) {
+        super.makeText(ownerStage, toastMsg, toastDelay, fadeDelay, fontSize);
         text.setFill(Color.WHITE);
         root.setStyle("-fx-background-color: rgba(0, 0, 0, 0);");
     }

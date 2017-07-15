@@ -12,7 +12,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
-/*Credits: https://stackoverflow.com/a/38373408/6063947*/
+/**
+ * This class creates an android-like toast
+ * */
 public abstract class Toast {
 
     Group root;
@@ -20,7 +22,18 @@ public abstract class Toast {
 
     Toast(){}
 
-    public void makeText(Stage ownerStage, String toastMsg, int toastDelay, int fadeInDelay, int fadeOutDelay, int fontSize) {
+    /**
+     * Creates a toast with a certain message
+     *
+     * @param ownerStage: The stage to which the toast belongs
+     * @param toastMsg: The message which is to be displayed in the toast
+     * @param toastDelay: The duration in ms for which the message appears
+     * @param fadeDelay: The duration for which the messages fades in and out (in ms)
+     * @param fontSize: The font size of the message
+     *
+     * Much of this method is borrowed from https://stackoverflow.com/a/38373408/6063947
+     * */
+    public void makeText(Stage ownerStage, String toastMsg, int toastDelay, int fadeDelay, int fontSize) {
         Stage toastStage = new Stage();
         toastStage.initOwner(ownerStage);
         toastStage.setResizable(false);
@@ -42,7 +55,7 @@ public abstract class Toast {
         toastStage.show();
 
         Timeline fadeInTimeline = new Timeline();
-        KeyFrame fadeInKey1 = new KeyFrame(Duration.millis(fadeInDelay), new KeyValue (toastStage.getScene().getRoot().opacityProperty(), 1));
+        KeyFrame fadeInKey1 = new KeyFrame(Duration.millis(fadeDelay), new KeyValue (toastStage.getScene().getRoot().opacityProperty(), 1));
         fadeInTimeline.getKeyFrames().add(fadeInKey1);
         fadeInTimeline.setOnFinished(event -> new Thread(() -> {
             try {
@@ -51,7 +64,7 @@ public abstract class Toast {
                 e.printStackTrace();
             }
             Timeline fadeOutTimeline = new Timeline();
-            KeyFrame fadeOutKey1 = new KeyFrame(Duration.millis(fadeOutDelay), new KeyValue(toastStage.getScene().getRoot().opacityProperty(), 0));
+            KeyFrame fadeOutKey1 = new KeyFrame(Duration.millis(fadeDelay), new KeyValue(toastStage.getScene().getRoot().opacityProperty(), 0));
             fadeOutTimeline.getKeyFrames().add(fadeOutKey1);
             fadeOutTimeline.setOnFinished(event1 -> toastStage.close());
             fadeOutTimeline.play();

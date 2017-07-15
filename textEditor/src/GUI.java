@@ -345,7 +345,7 @@ public class GUI extends Application {
         else {
             words = getCurrentTextArea().getSelectedText().split(" ");
         }
-        toast.makeText(mainStage, words.length + " words", 3000, 100, 100, 15);
+        toast.makeText(mainStage, words.length + " words", 3000, 100, 15);
     }
 
     /**
@@ -398,7 +398,7 @@ public class GUI extends Application {
             createWarningAlert("Error saving file");
         }
         else {
-            toast.makeText(mainStage, "File saved", 1000, 100, 100, 10);
+            toast.makeText(mainStage, "File saved", 1000, 100, 15);
             tabInfos.stream()
                     .filter(tabInfo -> tabInfo.getTab().equals(tabManager.getCurrentTab()))
                     .forEach(tabInfo -> tabInfo.setHash(getCurrentTextArea().getText().hashCode()));
