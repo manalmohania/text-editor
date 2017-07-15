@@ -20,6 +20,9 @@ final class Preferences implements Serializable{
         this.theme = theme;
     }
 
+    /**
+     * serialises a Preferences object and saves it in a file called preferences.ser
+     * */
     void save() {
         try {
             ObjectOutputStream oos = new ObjectOutputStream(
