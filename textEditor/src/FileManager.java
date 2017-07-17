@@ -88,7 +88,6 @@ class FileManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return res;
     }
 

@@ -190,16 +190,7 @@ public class GUI extends Application {
         menuBar.getMenus().get(3).getItems().addAll(font, fontSize);
 
         MenuItem view = new MenuItem("View on Github");
-        view.setOnAction(event -> {
-            try {
-                Desktop.getDesktop().browse(new URI("http://www.google.com"));
-            } catch (IOException e) {
-                createWarningAlert("Unable to connect to the web");
-            } catch (URISyntaxException e) {
-                createWarningAlert("Unable to connect to the web");
-                e.printStackTrace();
-            }
-        });
+        view.setOnAction(event -> openRepo());
         MenuItem report = new MenuItem("Send feedback");
         report.setOnAction(event -> sendMail());
         menuBar.getMenus().get(4).getItems().addAll(view, report);
@@ -345,6 +336,20 @@ public class GUI extends Application {
             Desktop.getDesktop().mail(URI.create("mailto:manalmohania@gmail.com"));
         } catch (IOException e) {
             createWarningAlert("Unable to connect to email client");
+        }
+    }
+
+    /**
+     * opens the github repo in the default browser
+     * */
+    private void openRepo(){
+        try {
+            Desktop.getDesktop().browse(new URI("https://github.com/manalmohania/text-editor"));
+        } catch (IOException e) {
+            createWarningAlert("Unable to connect to the web");
+        } catch (URISyntaxException e) {
+            createWarningAlert("Unable to connect to the web");
+            e.printStackTrace();
         }
     }
 
